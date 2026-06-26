@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌱 Agro Smart Chat</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#c7f9cc,#95d5b2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.chat{
+    width:800px;
+    max-width:95%;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    overflow:hidden;
+}
+
+.topo{
+    background:#2d6a4f;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.topo h1{
+    font-size:28px;
+}
+
+#chatBox{
+    height:420px;
+    overflow-y:auto;
+    padding:20px;
+    background:#f8f9fa;
+}
+
+.bot,.user{
+    padding:12px;
+    border-radius:15px;
+    margin:12px 0;
+    width:fit-content;
+    max-width:80%;
+    animation:aparecer .3s;
+}
+
+.bot{
+    background:#d8f3dc;
+}
+
+.user{
+    background:#2d6a4f;
+    color:white;
+    margin-left:auto;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.botoes{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    padding:20px;
+    background:white;
+}
+
+button{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:#2d6a4f;
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#40916c;
+    transform:scale(1.03);
+}
+</style>
+
+</head>
+<body>
+
+<div class="chat">
+
+<div class="topo">
+<h1>🌱 Agro Smart Chat</h1>
+<p>Assistente Virtual de Agricultura Inteligente</p>
+</div>
+
+<div id="chatBox">
+
+<div class="bot">
+Olá! 👋<br><br>
+Sou o <b>Agro Smart Chat</b>.<br><br>
+
+Escolha um dos assuntos abaixo para aprender como a matemática e a programação ajudam a agricultura.
+</div>
+
+</div>
+
+<div class="botoes">
+
+<button onclick="responder(1)">💧 Desperdício</button>
+
+<button onclick="responder(2)">💰 Lucro</button>
+
+<button onclick="responder(3)">📐 Matemática</button>
+
+<button onclick="responder(4)">📊 Dashboard</button>
+
+<button onclick="responder(5)">🤖 IA</button>
+
+<button onclick="responder(6)">🚁 Drones</button>
+
+</div>
+
+</div>
+
+<script>
+
+const chat=document.getElementById("chatBox");
+
+function mensagem(texto,classe){
+
+chat.innerHTML+=`<div class="${classe}">${texto}</div>`;
+chat.scrollTop=chat.scrollHeight;
+
+}
+
+function responder(op){
+
+if(op==1){
+
+mensagem("Quero saber sobre desperdício de água e fertilizantes.","user");
+
+setTimeout(function(){
+
+mensagem(`
+<b>💧 O Problema</b><br><br>
+
+Na agricultura, aplicar fertilizantes ou água igualmente em toda a plantação gera desperdício.
+
+Algumas áreas precisam de mais nutrientes e outras de menos.
+
+A Agricultura de Precisão utiliza sensores para identificar essas diferenças e aplicar somente a quantidade necessária.
+
+✔ Economia de água<br>
+✔ Menor gasto com fertilizantes<br>
+✔ Menor impacto ambiental
+
+`,"bot");
+
+},500);
+
+}
+
+if(op==2){
+
+mensagem("Como calcular o lucro?","user");
+
+setTimeout(function(){
+
+mensagem(`
+<b>💰 Matemática Financeira</b><br><br>
+
+A fórmula utilizada é:
+
+<h3>Lucro = Receita − Custos</h3>
+
+Exemplo:
+
+Receita = R$ 30.000
+
+Custos = R$ 18.000
+
+Lucro = R$ 12.000
+
+Essa conta ajuda o produtor a tomar decisões mais inteligentes.
+
+`,"bot");
+
+},500);
+
+}
+
+if(op==3){
+
+mensagem("Como a matemática ajuda na agricultura?","user");
+
+setTimeout(function(){
+
+mensagem(`
+<b>📐 Matemática Aplicada</b><br><br>
+
+A matemática é utilizada para:
+
+• Calcular área das plantações.
+
+• Calcular perímetro dos talhões.
+
+• Dimensionar sistemas de irrigação.
+
+• Definir a quantidade ideal de sementes.
+
+• Planejar o uso do solo.
+
+Esses cálculos tornam a produção mais eficiente.
+
+`,"bot");
+
+},500);
+
+}
+
+if(op==4){
+
+mensagem("O que é um Dashboard?","user");
+
+setTimeout(function(){
+
+mensagem(`
+<b>📊 Dashboard Inteligente</b><br><br>
+
+Um painel pode mostrar em tempo real:
+
+🌡 Temperatura
+
+💧 Umidade do solo
+
+☀ Previsão do tempo
+
+🌱 Estado da plantação
+
+Essas informações ajudam o produtor a decidir quando irrigar ou aplicar fertilizantes.
+
+`,"bot");
+
+},500);
+
+}
+
+if(op==5){
+
+mensagem("Como a Inteligência Artificial ajuda?","user");
+
+setTimeout(function(){
+
+mensagem(`
+<b>🤖 Inteligência Artificial</b><br><br>
+
+Modelos de Machine Learning conseguem analisar:
+
+✔ Histórico de chuvas
+
+✔ Temperatura
+
+✔ Umidade
+
+✔ Produção anterior
+
+Com essas informações, a IA consegue prever o melhor momento para plantar, colher e irrigar.
+
+`,"bot");
+
+},500);
+
+}
+
+if(op==6){
+
+mensagem("Como drones ajudam na agricultura?","user");
+
+setTimeout(function(){
+
+mensagem(`
+<b>🚁 Drones e Sensores</b><br><br>
+
+Drones utilizam câmeras especiais para gerar mapas NDVI.
+
+Esses mapas mostram:
+
+🟢 Plantas saudáveis
+
+🟡 Falta de nutrientes
+
+🔴 Possíveis pragas
+
+Assim, o produtor identifica problemas rapidamente e reduz desperdícios.
+
+`,"bot");
+
+},500);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
