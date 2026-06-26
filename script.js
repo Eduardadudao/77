@@ -1,59 +1,78 @@
-// ====================================================
-// Projeto Agrinho 2026
-// Agricultura de Precisão
-// Aluna: Eduarda Lorrani
-// Professor: Luiz Alessandro
-// ====================================================
+/* ===== Banner Principal ===== */
 
-// Função que calcula a economia de água
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+    background:linear-gradient(135deg,#1b5e20,#4caf50);
+    color:white;
+    gap:40px;
+}
 
-function calcular() {
+.hero-texto{
+    width:50%;
+}
 
-    let area = parseFloat(document.getElementById("area").value);
-    let agua = parseFloat(document.getElementById("agua").value);
-    let resultado = document.getElementById("resultado");
+.hero-texto h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
 
-    // Verifica se os campos foram preenchidos
-    if (isNaN(area) || isNaN(agua) || area <= 0 || agua <= 0) {
+.hero-texto h2{
+    font-size:30px;
+    margin-bottom:20px;
+}
 
-        resultado.innerHTML =
-        "⚠️ Informe valores válidos para realizar a simulação.";
+.hero-texto p{
+    font-size:18px;
+    margin-bottom:12px;
+}
 
-        resultado.style.color = "red";
+.hero-imagem{
+    width:45%;
+}
 
-        return;
-    }
+.hero-imagem img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
 
-    // Consumo total
+.botao{
+    display:inline-block;
+    margin-top:20px;
+    background:white;
+    color:#2e7d32;
+    padding:15px 30px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
 
-    let consumo = area * agua;
+.botao:hover{
+    background:#dcedc8;
+}
 
-    // Economia estimada de 25%
+@media(max-width:768px){
 
-    let economia = consumo * 0.25;
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
 
-    // Novo consumo
+.hero-texto,
+.hero-imagem{
+    width:100%;
+}
 
-    let novoConsumo = consumo - economia;
+.hero-texto h1{
+    font-size:38px;
+}
 
-    resultado.style.color = "#1b5e20";
+.hero-texto h2{
+    font-size:24px;
+}
 
-    resultado.innerHTML = `
-
-    <h3>Resultado da Simulação</h3>
-
-    <p><strong>Consumo atual:</strong> ${consumo.toFixed(2)} litros</p>
-
-    <p><strong>Economia estimada:</strong> ${economia.toFixed(2)} litros</p>
-
-    <p><strong>Novo consumo:</strong> ${novoConsumo.toFixed(2)} litros</p>
-
-    <br>
-
-    ✅ Utilizando Agricultura de Precisão, sensores,
-    programação e Inteligência Artificial,
-    o produtor pode reduzir significativamente
-    o desperdício de água e fertilizantes.
-
-    `;
 }
