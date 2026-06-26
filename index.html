@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>AgroFuturo Black 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroTech Precision</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>AgroFuturo Black 2026</h1>
-  <p>Tecnologia e Matemática transformando o agro</p>
-</header>
+  <header>
+    <h1>🌱 AgroTech Precision</h1>
+    <p>Projeto Agrinho 2026</p>
+  </header>
 
-<section class="hero">
-  <img src="agro.png" alt="Agrotecnologia">
-</section>
+  <section class="info">
+    <h2>📌 Problema Real</h2>
+    <p>
+      O desperdício de água e fertilizantes na agricultura ocorre devido à aplicação não uniforme dos recursos,
+      causando prejuízos econômicos e ambientais.
+    </p>
+  </section>
 
-<section class="conteudo">
+  <section class="info">
+    <h2>📊 Solução com Matemática e Programação</h2>
+    <ul>
+      <li>Otimização de custos usando matemática financeira</li>
+      <li>Programação linear para distribuição ideal de recursos</li>
+      <li>Uso de sensores e IoT na agricultura de precisão</li>
+      <li>Inteligência artificial para previsão de colheita</li>
+    </ul>
+  </section>
 
-  <h2>O Problema Real</h2>
-  <p>
-    Na agricultura regional, um dos maiores desafios é a aplicação uniforme de fertilizantes e água,
-    gerando desperdício financeiro e ambiental.
-  </p>
+  <section class="quiz">
+    <h2>🧠 Quiz Interativo</h2>
 
-  <h2>Matemática e Programação</h2>
-  <ul>
-    <li>Otimização de custos e lucros usando fórmulas matemáticas</li>
-    <li>Programação linear para maximizar produção</li>
-    <li>Geometria para cálculo de áreas agrícolas</li>
-    <li>IA e sensores para previsão de colheita</li>
-  </ul>
+    <p>Qual tecnologia ajuda a reduzir desperdício no campo?</p>
 
-</section>
+    <button onclick="responder(false)">Uso aleatório de recursos</button>
+    <button onclick="responder(true)">Agricultura de precisão</button>
+    <button onclick="responder(false)">Aumentar irrigação sem controle</button>
 
-<section class="quiz">
+    <p id="resultado"></p>
+  </section>
 
-  <h2>Teste seus conhecimentos</h2>
+  <section class="botao">
+    <h2>⚙️ Simulação</h2>
+    <button onclick="simular()">Calcular otimização</button>
+    <p id="saida"></p>
+  </section>
 
-  <p>Qual o principal benefício da agricultura de precisão?</p>
+  <footer>
+    <p><strong>Aluno:</strong> Eduarda Lorrani</p>
+    <p><strong>Professor:</strong> Luiz Alessandro</p>
+  </footer>
 
-  <button onclick="resposta(false)">Aumentar desperdício</button>
-  <button onclick="resposta(true)">Reduzir custos e desperdícios</button>
-  <button onclick="resposta(false)">Plantar sem planejamento</button>
-
-  <p id="resultado"></p>
-
-</section>
-
-<footer>
-  <p>Desenvolvido por: Eduarda Lorrani</p>
-  <p>Professor: Luiz Alessandro</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
