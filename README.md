@@ -1,6 +1,7 @@
-#  AgroFuturo 2026
+#  AgroTech Precision - Agrinho 2026
 
-Projeto desenvolvido para o Agrinho 2026.
+##  Tema
+Uso da matemática e programação para reduzir desperdícios na agricultura.
 
 ##  Aluna
 Eduarda Lorrani
@@ -8,16 +9,19 @@ Eduarda Lorrani
 ##  Professor
 Luiz Alessandro
 
-##  Tema
-Tecnologia e Matemática aplicadas à agricultura de precisão.
-
 ##  Objetivo
-Mostrar como programação, matemática e inteligência artificial ajudam a reduzir desperdícios de água, fertilizantes e aumentam a produtividade no campo.
+Mostrar como tecnologia, matemática e programação podem ajudar na agricultura de precisão, reduzindo custos e impactos ambientais.
 
 ##  Tecnologias
 - HTML
 - CSS
 - JavaScript
 
-##  Imagem
-A imagem principal foi gerada com apoio de IA para representar o conceito de agricultura inteligente
+##  Funcionalidades
+- Página interativa
+- Quiz educativo
+- Simulação de economia agrícola
+- Design moderno escuro
+
+##  Como executar
+Abra o arquivo `index.html` no navegador.
