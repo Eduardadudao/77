@@ -1,137 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AgroTech IA | Agrinho 2026</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <title>AgroFuturo Black 2026</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="hero">
-
-<div class="hero-texto">
-
-<h1>🌿 AgroTech IA</h1>
-
-<h2>Tecnologia que transforma o campo</h2>
-
-<p>
-
-A Agricultura de Precisão utiliza Inteligência Artificial,
-sensores, drones e programação para reduzir o desperdício
-de água e fertilizantes, aumentando a produtividade e
-preservando o meio ambiente.
-
-</p>
-
-<a href="#problema" class="botao">
-
-Conheça o Projeto
-
-</a>
-
-</div>
-
-<div class="hero-imagem">
-
-<img src="banner.png" alt="Agricultura">
-
-</div>
-
+<header>
+  <h1>AgroFuturo Black 2026</h1>
+  <p>Tecnologia e Matemática transformando o agro</p>
 </header>
 
-<nav>
+<section class="hero">
+  <img src="agro.png" alt="Agrotecnologia">
+</section>
 
-<a href="#problema">Problema</a>
+<section class="conteudo">
 
-<a href="#matematica">Matemática</a>
+  <h2>O Problema Real</h2>
+  <p>
+    Na agricultura regional, um dos maiores desafios é a aplicação uniforme de fertilizantes e água,
+    gerando desperdício financeiro e ambiental.
+  </p>
 
-<a href="#tecnologia">Tecnologia</a>
-
-<a href="#simulador">Simulador</a>
-
-<a href="#referencias">Referências</a>
-
-</nav>
-
-<section id="problema">
-
-<h2>🌾 O Problema</h2>
-
-<p>
-
-Na agricultura regional um dos maiores desafios é o
-desperdício de água e fertilizantes.
-
-Muitas vezes toda a plantação recebe a mesma quantidade
-de água ou nutrientes, mesmo quando determinadas áreas
-necessitam de menos.
-
-Isso aumenta os custos da produção e causa impactos
-ambientais.
-
-</p>
+  <h2>Matemática e Programação</h2>
+  <ul>
+    <li>Otimização de custos e lucros usando fórmulas matemáticas</li>
+    <li>Programação linear para maximizar produção</li>
+    <li>Geometria para cálculo de áreas agrícolas</li>
+    <li>IA e sensores para previsão de colheita</li>
+  </ul>
 
 </section>
 
-<section id="matematica">
+<section class="quiz">
 
-<h2>📐 Como a Matemática ajuda?</h2>
+  <h2>Teste seus conhecimentos</h2>
 
-<div class="cards">
+  <p>Qual o principal benefício da agricultura de precisão?</p>
 
-<div class="card">
+  <button onclick="resposta(false)">Aumentar desperdício</button>
+  <button onclick="resposta(true)">Reduzir custos e desperdícios</button>
+  <button onclick="resposta(false)">Plantar sem planejamento</button>
 
-<h3>💰 Lucro</h3>
-
-<p>
-
-Lucro = Receita − Custos
-
-</p>
-
-<p>
-
-A matemática financeira permite calcular o custo da produção,
-o preço de venda e aumentar os ganhos do produtor.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📏 Geometria</h3>
-
-<p>
-
-Os cálculos de área, perímetro e irrigação ajudam
-a utilizar apenas a quantidade necessária de água.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>💻 Programação</h3>
-
-<p>
-
-Os algoritmos automatizam irrigação,
-fertilização e monitoramento da lavoura.
-
-</p>
-
-</div>
-
-</div>
+  <p id="resultado"></p>
 
 </section>
+
+<footer>
+  <p>Desenvolvido por: Eduarda Lorrani</p>
+  <p>Professor: Luiz Alessandro</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
