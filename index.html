@@ -1,327 +1,269 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🌱 Agro Smart Chat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agricultura de Precisão</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:linear-gradient(135deg,#c7f9cc,#95d5b2);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-
-.chat{
-    width:800px;
-    max-width:95%;
-    background:white;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
-    overflow:hidden;
-}
-
-.topo{
-    background:#2d6a4f;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-
-.topo h1{
-    font-size:28px;
-}
-
-#chatBox{
-    height:420px;
-    overflow-y:auto;
-    padding:20px;
-    background:#f8f9fa;
-}
-
-.bot,.user{
-    padding:12px;
-    border-radius:15px;
-    margin:12px 0;
-    width:fit-content;
-    max-width:80%;
-    animation:aparecer .3s;
-}
-
-.bot{
-    background:#d8f3dc;
-}
-
-.user{
-    background:#2d6a4f;
-    color:white;
-    margin-left:auto;
-}
-
-@keyframes aparecer{
-    from{
-        opacity:0;
-        transform:translateY(10px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-.botoes{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-    padding:20px;
-    background:white;
-}
-
-button{
-    padding:15px;
-    border:none;
-    border-radius:12px;
-    cursor:pointer;
-    background:#2d6a4f;
-    color:white;
-    font-size:15px;
-    transition:.3s;
-}
-
-button:hover{
-    background:#40916c;
-    transform:scale(1.03);
-}
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="chat">
+<header>
 
-<div class="topo">
-<h1>🌱 Agro Smart Chat</h1>
-<p>Assistente Virtual de Agricultura Inteligente</p>
+    <h1>🌱 Agrinho 2026</h1>
+
+    <h2>Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</h2>
+
+    <p>
+        Projeto desenvolvido pela aluna <strong>Eduarda Lorrani</strong>,
+        sob orientação do professor <strong>Luiz Alessandro</strong>.
+    </p>
+
+</header>
+
+<nav>
+
+<a href="#introducao">Introdução</a>
+
+<a href="#problema">Problema</a>
+
+<a href="#matematica">Matemática e Programação</a>
+
+<a href="#tecnologia">Tecnologias</a>
+
+<a href="#simulador">Simulador</a>
+
+<a href="#conclusao">Conclusão</a>
+
+</nav>
+
+<section id="introducao">
+
+<h2>Introdução</h2>
+
+<p>
+
+A agricultura é essencial para a produção de alimentos e para a economia do país.
+Entretanto, produzir mais sem prejudicar o meio ambiente é um grande desafio.
+
+A Agricultura de Precisão utiliza tecnologias como sensores, programação,
+Internet das Coisas (IoT) e Inteligência Artificial para tornar a produção
+mais eficiente e sustentável.
+
+</p>
+
+</section>
+
+<section id="problema">
+
+<h2>O Problema Real</h2>
+
+<p>
+
+Na agricultura regional, um dos maiores desafios é o desperdício de água
+e fertilizantes.
+
+Muitas vezes toda a plantação recebe a mesma quantidade de água ou nutrientes,
+mesmo quando determinadas áreas necessitam de menos.
+
+Esse desperdício aumenta os custos da produção e causa impactos ambientais.
+
+</p>
+
+</section>
+
+<section id="matematica">
+
+<h2>A Matemática e a Programação</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>💰 Lucro</h3>
+
+<p>
+
+A matemática financeira ajuda a calcular:
+
+<strong>Lucro = Receita − Custos</strong>
+
+permitindo ao produtor planejar melhor sua produção.
+
+</p>
+
 </div>
 
-<div id="chatBox">
+<div class="card">
 
-<div class="bot">
-Olá! 👋<br><br>
-Sou o <b>Agro Smart Chat</b>.<br><br>
+<h3>📐 Geometria</h3>
 
-Escolha um dos assuntos abaixo para aprender como a matemática e a programação ajudam a agricultura.
+<p>
+
+Os cálculos de área, perímetro e irrigação auxiliam no dimensionamento correto
+dos sistemas agrícolas.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💻 Programação</h3>
+
+<p>
+
+A programação permite automatizar irrigação,
+calcular a quantidade ideal de fertilizantes
+e organizar informações da propriedade rural.
+
+</p>
+
 </div>
 
 </div>
 
-<div class="botoes">
+</section>
 
-<button onclick="responder(1)">💧 Desperdício</button>
+<section id="tecnologia">
 
-<button onclick="responder(2)">💰 Lucro</button>
+<h2>Tecnologias Utilizadas no Agro</h2>
 
-<button onclick="responder(3)">📐 Matemática</button>
+<div class="cards">
 
-<button onclick="responder(4)">📊 Dashboard</button>
+<div class="card">
 
-<button onclick="responder(5)">🤖 IA</button>
+<h3>📡 Internet das Coisas (IoT)</h3>
 
-<button onclick="responder(6)">🚁 Drones</button>
+<p>
+
+Sensores monitoram temperatura,
+umidade e condições do solo em tempo real.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤖 Inteligência Artificial</h3>
+
+<p>
+
+A IA analisa dados climáticos,
+histórico da produção e identifica o melhor momento para plantar,
+irrigar e colher.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚁 Drones</h3>
+
+<p>
+
+Os drones produzem mapas da plantação,
+identificando rapidamente pragas,
+doenças e áreas que necessitam de irrigação.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Dashboards</h3>
+
+<p>
+
+Os painéis apresentam informações em tempo real,
+facilitando a tomada de decisões do produtor.
+
+</p>
 
 </div>
 
 </div>
 
-<script>
+</section>
 
-const chat=document.getElementById("chatBox");
+<section id="simulador">
 
-function mensagem(texto,classe){
+<h2>Simulador de Economia de Água</h2>
 
-chat.innerHTML+=`<div class="${classe}">${texto}</div>`;
-chat.scrollTop=chat.scrollHeight;
+<p>
 
-}
+Digite a área da plantação e o consumo médio de água por hectare.
 
-function responder(op){
+O sistema calculará uma economia estimada utilizando Agricultura de Precisão.
 
-if(op==1){
+</p>
 
-mensagem("Quero saber sobre desperdício de água e fertilizantes.","user");
+<label>Área da plantação (hectares)</label>
 
-setTimeout(function(){
+<input type="number" id="area">
 
-mensagem(`
-<b>💧 O Problema</b><br><br>
+<label>Consumo de água por hectare (litros)</label>
 
-Na agricultura, aplicar fertilizantes ou água igualmente em toda a plantação gera desperdício.
+<input type="number" id="agua">
 
-Algumas áreas precisam de mais nutrientes e outras de menos.
+<button onclick="calcular()">Calcular Economia</button>
 
-A Agricultura de Precisão utiliza sensores para identificar essas diferenças e aplicar somente a quantidade necessária.
+<h3 id="resultado"></h3>
 
-✔ Economia de água<br>
-✔ Menor gasto com fertilizantes<br>
-✔ Menor impacto ambiental
+</section>
 
-`,"bot");
+<section id="conclusao">
 
-},500);
+<h2>Conclusão</h2>
 
-}
+<p>
 
-if(op==2){
+A união entre matemática, programação,
+Internet das Coisas, Inteligência Artificial
+e Agricultura de Precisão contribui para reduzir desperdícios,
+aumentar a produtividade e preservar o meio ambiente.
 
-mensagem("Como calcular o lucro?","user");
+Produzir alimentos de forma sustentável é investir no futuro das próximas gerações.
 
-setTimeout(function(){
+</p>
 
-mensagem(`
-<b>💰 Matemática Financeira</b><br><br>
+</section>
 
-A fórmula utilizada é:
+<section>
 
-<h3>Lucro = Receita − Custos</h3>
+<h2>Referências</h2>
 
-Exemplo:
+<ul>
 
-Receita = R$ 30.000
+<li>Material do Concurso Agrinho 2026.</li>
 
-Custos = R$ 18.000
+<li>EMBRAPA.</li>
 
-Lucro = R$ 12.000
+<li>Conteúdos educacionais da Alura.</li>
 
-Essa conta ajuda o produtor a tomar decisões mais inteligentes.
+<li>FAO - Organização das Nações Unidas para Alimentação e Agricultura.</li>
 
-`,"bot");
+</ul>
 
-},500);
+</section>
 
-}
+<footer>
 
-if(op==3){
+<p><strong>Aluna:</strong> Eduarda Lorrani</p>
 
-mensagem("Como a matemática ajuda na agricultura?","user");
+<p><strong>Professor:</strong> Luiz Alessandro</p>
 
-setTimeout(function(){
+<p>Projeto desenvolvido para o Concurso Agrinho 2026.</p>
 
-mensagem(`
-<b>📐 Matemática Aplicada</b><br><br>
+</footer>
 
-A matemática é utilizada para:
-
-• Calcular área das plantações.
-
-• Calcular perímetro dos talhões.
-
-• Dimensionar sistemas de irrigação.
-
-• Definir a quantidade ideal de sementes.
-
-• Planejar o uso do solo.
-
-Esses cálculos tornam a produção mais eficiente.
-
-`,"bot");
-
-},500);
-
-}
-
-if(op==4){
-
-mensagem("O que é um Dashboard?","user");
-
-setTimeout(function(){
-
-mensagem(`
-<b>📊 Dashboard Inteligente</b><br><br>
-
-Um painel pode mostrar em tempo real:
-
-🌡 Temperatura
-
-💧 Umidade do solo
-
-☀ Previsão do tempo
-
-🌱 Estado da plantação
-
-Essas informações ajudam o produtor a decidir quando irrigar ou aplicar fertilizantes.
-
-`,"bot");
-
-},500);
-
-}
-
-if(op==5){
-
-mensagem("Como a Inteligência Artificial ajuda?","user");
-
-setTimeout(function(){
-
-mensagem(`
-<b>🤖 Inteligência Artificial</b><br><br>
-
-Modelos de Machine Learning conseguem analisar:
-
-✔ Histórico de chuvas
-
-✔ Temperatura
-
-✔ Umidade
-
-✔ Produção anterior
-
-Com essas informações, a IA consegue prever o melhor momento para plantar, colher e irrigar.
-
-`,"bot");
-
-},500);
-
-}
-
-if(op==6){
-
-mensagem("Como drones ajudam na agricultura?","user");
-
-setTimeout(function(){
-
-mensagem(`
-<b>🚁 Drones e Sensores</b><br><br>
-
-Drones utilizam câmeras especiais para gerar mapas NDVI.
-
-Esses mapas mostram:
-
-🟢 Plantas saudáveis
-
-🟡 Falta de nutrientes
-
-🔴 Possíveis pragas
-
-Assim, o produtor identifica problemas rapidamente e reduz desperdícios.
-
-`,"bot");
-
-},500);
-
-}
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
